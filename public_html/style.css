@@ -1,0 +1,230 @@
+body{
+  background-color: beige;
+}
+*{
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+  
+}
+.new-header{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+}
+nav{
+  display:flex;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #500000;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color:beige;
+}
+.detel{
+  margin-left:  8%;
+  margin-top: 10%;
+}
+.detel h1{
+  font-size: 50px;
+  color:#212121;
+  margin-bottom: 20px;
+}
+span{
+  color:orange;
+}
+.detel li{
+  color:#555;
+  line-height: 22px;
+}
+.detel a{
+  background:#212121;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight:bold;
+  color:#fff;
+  display:inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+.images{
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+.images img{
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s ;
+}
+.images:hover .shape{
+  bottom: 40px;
+}
+.images:hover .me{
+  left:45%
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  gap:2.5rem;
+  margin-top: 5rem;
+}
+.row{
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.row img{
+  width:100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.1), #ff004f);
+  position:absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom:0;
+  overflow:hidden;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:0 40px;
+  transition: height 0.5s;
+  flex-direction: column;
+}
+.layer h5{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.layer p{
+  color:#212121;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.row:hover img{
+  transform: scale(1.1);
+}
+.row:hover .layer{
+  height:100%;
+}
+.main-text-2{
+  text-align: center;
+}
+
+
+.tilt{
+  background-color: beige;
+  display:flex;
+  justify-content: space-between;
+  padding:40px;
+  width:70%;
+  margin:10rem auto 0 auto;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 5px;
+}
+.tilt h1{
+  margin:0;
+  color:black;
+}.tilt p{
+  margin-right: 15px;
+  color:dark;
+}
+.tilt img{
+  height:250px;
+}
+
+.tilt1{
+  background-color: beige;
+  display:flex;
+  justify-content: space-between;
+  padding:40px;
+  width:70%;
+  margin:10rem auto 0 auto;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 5px;
+}
+.tilt1 h1{
+  margin:0;
+  color:black;
+}.tilt1 p{
+  margin-right: 15px;
+  color:dark;
+}
+.tilt1 img{
+  margin-right: 10px;
+  height:250px;
+}
