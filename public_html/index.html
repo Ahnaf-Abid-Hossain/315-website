@@ -3,9 +3,10 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    
     <title>personal website</title>
   </head>
-  <body>
+  <body onload="checkStatus()">
     <div class="new-header">
       <nav>
         <a href="https://www.tamu.edu/"><img src="TAM-LogoBox.png" class ="logo" width="100" height="85" ></a>
@@ -14,9 +15,8 @@
         <li><a href="portfolio.html">Projects</a></li>
         <li><a href="service.html">Service</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="https://github.com/Ahnaf-Abid-Hossain">Github</a></li>
-        <li><a href="https://linkedin.com/in/ahnaf-hossain-a52190214">Linkedin</a></li>
-        <li><a href="https://www.youtube.com/channel/UCAQLkCieBdmbVLoqPj_zECA">Youtube</a></li>
+        <li><a href="chatgpt.html">ChatGPT</a></li>
+        <li><p>Toggle</p><input type="checkbox" id = "check" onclick="changeStatus()"></li>
       </ul>
     </nav>
     <div class ="detel">
@@ -26,15 +26,26 @@
         <li>Skills: C++, Java, Node.js, Python, React</li>
         <li>Incoming Software Engineer Intern @ <a href="https://www.bp.com/">BP</a></li>
         <li>Worked at Code Ninjas from 2018-2021</li>
+        <li>Dedicated and a Hardworker</li>
+        <li>A love a challenge so would love to work on challenging projects</li>
       </ul>
       <br> 
-    <a href="ResumeMain.pdf"> DOWNLOAD RESUME</a>
+    <div class = "detel1"><a href="ResumeMain.pdf"> DOWNLOAD RESUME</a></div>
     </div>
     <div class="images">
       <img src="My project (1).png" class ="shape">
       <img src ="My project.png" class="me">
     </div>
   </div>
+  <div class ="social">
+    <h1>Socials</h1>
+<ul>
+        <li><a href="https://github.com/Ahnaf-Abid-Hossain">Github</a></li>
+        <li><a href="https://linkedin.com/in/ahnaf-hossain-a52190214">Linkedin</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAQLkCieBdmbVLoqPj_zECA">Youtube</a></li>
+</ul>
+  </div>
 
   </body>
+  <script src="script.js"></script>
 </html>

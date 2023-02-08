@@ -5,7 +5,7 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>personal website</title>
   </head>
-  <body>
+  <body onload = "checkStatus()">
     <div class="new-header-2">
       <nav>
         <img src="TAM-LogoBox.png" class ="logo" width="100" height="85" >
@@ -14,6 +14,7 @@
         <li><a href="portfolio.html">Projects</a></li>
         <li><a href="">Service</a></li>
         <li><a href="about.html">About</a></li>
+        <li><input type="checkbox" id = "check" onclick="changeStatus()"></li>
       </ul>
     </nav>
     </div>
@@ -31,7 +32,7 @@
     <div class = "tilt1">
         <div class="bes text">
           <h1>Service #2</h1>
-          <p>I worked at <a href ="https://www.codeninjas.com/Code">Code Ninjas</a> from 2018-2021. In this job I taught kids how to code through game development.
+          <p>I worked at <a href ="https://www.codeninjas.com/Code">Code Ninjas</a> from 2018-2021. In this job I taught kids how to code through game development. Through this job, I shared my knowledge of programming to the next generation and I am extremely proud of that. 
           </div>
             <img src="img/code_ninjas.png" alt="A b">
           </p>
@@ -39,4 +40,5 @@
         </div>
 
   </body>
+  <script src="script.js"></script>
 </html>

@@ -35,6 +35,10 @@ nav ul li a{
 nav ul li a:hover{
   color:beige;
 }
+
+.new-header nav ul li p{
+  color:#878585;
+}
 .detel{
   margin-left:  8%;
   margin-top: 10%;
@@ -173,6 +177,7 @@ span{
   color:#212121;
   font-size: 1rem;
   line-height: 1.8;
+  margin-right: 5px;
 }
 
 .row:hover img{
@@ -227,4 +232,35 @@ span{
 .tilt1 img{
   margin-right: 10px;
   height:250px;
+}
+.social{
+  margin-top: 50px;
+  overflow: hidden;
+  background-color: #500000;
+  display:flex;
+  justify-content: space-between;
+  padding:40px;
+  width:30%;
+
+  box-shadow: 1px 1px 1px 1px;
+  border: 3px solid #000;
+}
+.social ul li{
+  overflow:hidden;
+  
+  list-style: none;
+  margin: 10px 20px;
+}
+.social ul li a{
+  text-decoration: none;
+  color:white;
+
+}
+
+.social ul li:hover{
+  color:beige;
+}
+
+.social ul li:hover a{
+  color:#fdfdfd;
 }

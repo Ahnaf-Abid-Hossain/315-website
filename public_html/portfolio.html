@@ -5,7 +5,7 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>personal website</title>
   </head>
-  <body>
+  <body onload = "checkStatus()">
     <div class="new-header-2">
       <nav>
         <img src="TAM-LogoBox.png" class ="logo" width="100" height="85" >
@@ -14,6 +14,8 @@
         <li><a href="">Projects</a></li>
         <li><a href="service.html">Service</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="https://github.com/Ahnaf-Abid-Hossain">Github</a></li>
+        <li><input type="checkbox" id = "check" onclick="changeStatus()"></li>
       </ul>
     </nav>
     </div>
@@ -21,7 +23,7 @@
    <section class ="portfolio-class" id ="portfolio">
     <div class ="main-text-2">
       <p>Hover over pictures to see my</p>
-      <h2><span>Latest</span> Project</h2>
+      <h1><span>Latest</span> Project</h1>
     </div>
     <div class="projects">
       <div class = "row">
@@ -38,7 +40,7 @@
         <img src="img/portfolio2.png">
         <div class ="layer">
           <h5>y86 processor</h5>
-          <p> This processor was made using logisim and simulates most functions the y86 ISA has to offer. The test cases for this was also written by me in y86 assembly code.</p>
+          <p> This processor was made using logisim and simulates most functions the y86 ISA has to offer</p>
           <a href ="#"></a>
         </div>
       </div>
@@ -47,21 +49,14 @@
         <img src="img/portfolio3.png">
         <div class ="layer">
           <h5>TAMU Registration Helper</h5>
-          <p> This is a hackathon project done using node.js, express.js, html and css. Calls are made to mtu-courses Rate My Professor API and the average rating and difficulty ratings are shown in the tamu registration website as web popups.</p>
+          <p> This is a hackathon project done using node.js, express.js, html and css. </p>
           <a href ="#"></a>
         </div>
       </div>
 
-      <div class = "row">
-        <img src="img/portfolio4.jpg">
-        <div class ="layer">
-          <h5>Visual Design</h5>
-          <p> check out 10 best design's updates for the top web desing and development companies.</p>
-          <a href ="#"></a>
-        </div>
-      </div>
 
 
     </div>
    </section>
+   <script src="script.js"></script>
 </html>

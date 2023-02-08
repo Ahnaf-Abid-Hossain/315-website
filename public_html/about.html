@@ -3,9 +3,10 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  
     <title>personal website</title>
   </head>
-  <body>
+  <body onload ="checkStatus()">
     <div class="new-header-2">
       <nav>
         <img src="TAM-LogoBox.png" class ="logo" width="100" height="85" >
@@ -14,6 +15,7 @@
         <li><a href="portfolio.html">Projects</a></li>
         <li><a href="service.html">Service</a></li>
         <li><a href="">About</a></li>
+        <li><input type="checkbox" id = "check" onclick="changeStatus()"></li>
       </ul>
     </nav>
     </div>
@@ -31,4 +33,6 @@
     </div>
 
   </body>
+  
+  <script src="script.js"></script>
 </html>
